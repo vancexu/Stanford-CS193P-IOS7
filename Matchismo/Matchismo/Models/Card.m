@@ -23,4 +23,8 @@
     return score;
 }
 
+- (BOOL)isRed {
+    return NO;
+}
+
 @end

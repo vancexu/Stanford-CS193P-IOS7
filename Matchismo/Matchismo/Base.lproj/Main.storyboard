@@ -20,7 +20,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-YH-vV8">
                                 <rect key="frame" x="268" y="252" width="64" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="A♣︎" backgroundImage="cardfront">
+                                <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,7 +28,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uan-bX-gPK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-VP-d86">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-VP-d86">
                                 <rect key="frame" x="16" y="559" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -40,11 +40,11 @@
                             <constraint firstAttribute="centerX" secondItem="4Pr-YH-vV8" secondAttribute="centerX" id="TSB-aQ-KSw"/>
                             <constraint firstAttribute="centerY" secondItem="4Pr-YH-vV8" secondAttribute="centerY" id="Zx7-Ql-O8v"/>
                             <constraint firstItem="cHY-VP-d86" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cNo-8d-bdt"/>
+                            <constraint firstItem="cHY-VP-d86" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="thw-Lq-v4L"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cHY-VP-d86" secondAttribute="bottom" constant="20" id="xQU-gd-ukv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardButtom" destination="4Pr-YH-vV8" id="56r-VG-PvA"/>
                         <outlet property="flipLabel" destination="cHY-VP-d86" id="Ize-LE-Zs5"/>
                     </connections>
                 </viewController>
@@ -53,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cardfront" width="64" height="96"/>
+        <image name="cardback" width="64" height="96"/>
     </resources>
 </document>

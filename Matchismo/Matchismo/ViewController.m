@@ -15,22 +15,21 @@
 @property (nonatomic) int flipCount;
 
 @property (strong, nonatomic) Deck *deck;
-@property (weak, nonatomic) IBOutlet UIButton *cardButtom;
 
 @end
 
 @implementation ViewController
 
-// Init view and deck
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.deck = [[PlayingCardDeck alloc] init];
-    
-    [self.cardButtom setBackgroundImage:[UIImage imageNamed:@"cardback"]
-                               forState:UIControlStateNormal];
-    [self.cardButtom setTitle:@"" forState:UIControlStateNormal];
 
+- (Deck *)deck {
+    if (!_deck) {
+        _deck = [self createDeck];
+    }
+    return _deck;
+}
+
+- (Deck *)createDeck {
+    return [[PlayingCardDeck alloc] init];
 }
 
 - (void)setFlipCount:(int)flipCount {
@@ -43,13 +42,21 @@
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
                           forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
+        self.flipCount++;
     } else {
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
-                          forState:UIControlStateNormal];
         Card *card = [self.deck drawRandomCard];
-        [sender setTitle:card.contents forState:UIControlStateNormal];
+        if (card) {
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                              forState:UIControlStateNormal];
+            [sender setTitle:card.contents forState:UIControlStateNormal];
+            if ([card isRed]) {
+                [sender setTitleColor:[UIColor colorWithRed:1.0 green:0 blue:0 alpha:1] forState:UIControlStateNormal];
+            } else {
+                [sender setTitleColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1] forState:UIControlStateNormal];
+            }
+            self.flipCount++;
+        }
     }
-    self.flipCount++;
 }
 
 @end

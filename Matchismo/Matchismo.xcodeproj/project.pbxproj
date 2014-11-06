@@ -93,10 +93,10 @@
 		4B04149F1A0AC25D00D75F0A /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				4B0414AA1A0AC25D00D75F0A /* Main.storyboard */,
 				4B0414C91A0AC69B00D75F0A /* Models */,
 				4B0414A71A0AC25D00D75F0A /* ViewController.h */,
 				4B0414A81A0AC25D00D75F0A /* ViewController.m */,
-				4B0414AA1A0AC25D00D75F0A /* Main.storyboard */,
 				4B0414AD1A0AC25D00D75F0A /* Images.xcassets */,
 				4B0414AF1A0AC25D00D75F0A /* LaunchScreen.xib */,
 				4B0414A01A0AC25D00D75F0A /* Supporting Files */,
@@ -444,6 +444,7 @@
 				4B0414C21A0AC25D00D75F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B0414C31A0AC25D00D75F0A /* Build configuration list for PBXNativeTarget "MatchismoTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				4B0414C51A0AC25D00D75F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,11 @@
 
 #import "PlayingCard.h"
 
+@interface PlayingCard()
+
+
+@end
+
 @implementation PlayingCard
 
 - (NSString *)contents {
@@ -25,6 +30,15 @@
 
 - (NSString *)suit {
     return _suit ? _suit : @"?";
+}
+
+
+- (BOOL)isRed {
+    if ([self.suit isEqualToString:@"♥︎"] || [self.suit isEqualToString:@"♦︎"]) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 + (NSArray *)validSuits {
