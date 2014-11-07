@@ -1,4 +1,4 @@
-//
+    //
 //  Card.m
 //  Matchismo
 //
@@ -21,10 +21,6 @@
     }
     
     return score;
-}
-
-- (BOOL)isRed {
-    return NO;
 }
 
 @end

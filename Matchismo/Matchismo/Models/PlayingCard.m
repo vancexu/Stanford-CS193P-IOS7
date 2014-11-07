@@ -20,6 +20,21 @@
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
 
+- (int)match:(NSArray *)otherCards {
+    int score = 0;
+    
+    if ([otherCards count] == 1) {
+        PlayingCard *otherCard = otherCards.firstObject;
+        if (self.rank == otherCard.rank) {
+            score = 4;
+        } else if ([self.suit isEqualToString:otherCard.suit]) {
+            score = 1;
+        }
+    }
+    
+    return score;
+}
+
 @synthesize suit = _suit;
 
 - (void)setSuit:(NSString *)suit {
@@ -33,16 +48,8 @@
 }
 
 
-- (BOOL)isRed {
-    if ([self.suit isEqualToString:@"♥︎"] || [self.suit isEqualToString:@"♦︎"]) {
-        return YES;
-    } else {
-        return NO;
-    }
-}
-
 + (NSArray *)validSuits {
-    return @[@"♠︎", @"♣︎", @"♥︎", @"♦︎"];
+    return @[@"♠️", @"♣️", @"♥️", @"♦️"];
 }
 
 + (NSArray *)rankStrings {
