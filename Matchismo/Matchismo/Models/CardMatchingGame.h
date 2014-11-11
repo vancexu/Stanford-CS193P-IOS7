@@ -19,5 +19,8 @@
 - (Card *)cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic, readonly) NSInteger score;
+@property (nonatomic) NSUInteger mode; // 0: 2 card match; 1: 3 card match
+@property (nonatomic, strong, readonly) NSString *hint;
+
 
 @end
