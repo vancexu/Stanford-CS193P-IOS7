@@ -112,9 +112,7 @@ NSString* const SINGLE_HINT = @"%@";
                 card.chosen = YES;
             }
         }
-        
-        // update hint text
-        // hintText =
+
     }
 }
 
