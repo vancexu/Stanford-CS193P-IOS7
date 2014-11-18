@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B57AEBD1A1BAB9300E642AC /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B57AEBC1A1BAB9300E642AC /* TextStatsViewController.m */; };
 		4BB81F991A1A710B009F3738 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB81F981A1A710B009F3738 /* main.m */; };
 		4BB81F9C1A1A710B009F3738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB81F9B1A1A710B009F3738 /* AppDelegate.m */; };
 		4BB81F9F1A1A710B009F3738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB81F9E1A1A710B009F3738 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B57AEBB1A1BAB9300E642AC /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		4B57AEBC1A1BAB9300E642AC /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 		4BB81F931A1A710B009F3738 /* Attribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB81F971A1A710B009F3738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB81F981A1A710B009F3738 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				4BB81F9D1A1A710B009F3738 /* ViewController.h */,
 				4BB81F9E1A1A710B009F3738 /* ViewController.m */,
 				4BB81FA01A1A710B009F3738 /* Main.storyboard */,
+				4B57AEBB1A1BAB9300E642AC /* TextStatsViewController.h */,
+				4B57AEBC1A1BAB9300E642AC /* TextStatsViewController.m */,
 				4BB81FA31A1A710B009F3738 /* Images.xcassets */,
 				4BB81FA51A1A710B009F3738 /* LaunchScreen.xib */,
 				4BB81F961A1A710B009F3738 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				4BB81F9F1A1A710B009F3738 /* ViewController.m in Sources */,
 				4BB81F9C1A1A710B009F3738 /* AppDelegate.m in Sources */,
 				4BB81F991A1A710B009F3738 /* main.m in Sources */,
+				4B57AEBD1A1BAB9300E642AC /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				4BB81FB81A1A710B009F3738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BB81FB91A1A710B009F3738 /* Build configuration list for PBXNativeTarget "AttributeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				4BB81FBB1A1A710B009F3738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
