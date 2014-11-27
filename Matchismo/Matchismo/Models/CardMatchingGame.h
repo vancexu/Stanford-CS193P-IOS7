@@ -17,6 +17,7 @@
 
 - (void)chooseCardAtIndex:(NSUInteger)index;
 - (Card *)cardAtIndex:(NSUInteger)index;
+- (NSMutableArray *)currentChosenCards;
 
 @property (nonatomic, readonly) NSInteger score;
 @property (nonatomic) NSUInteger mode; // 0: 2 card match; 1: 3 card match

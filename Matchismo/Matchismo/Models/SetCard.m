@@ -28,34 +28,34 @@
 - (BOOL)isValidSet:(NSArray *)cards {
     SetCard *card1 = cards[0];
     SetCard *card2 = cards[1];
-    BOOL result = true;
+    BOOL result = YES;
     
     if (([self.symbol isEqualToString:card1.symbol] && [self.symbol isEqualToString:card2.symbol])
         || (![self.symbol isEqualToString:card1.symbol] && ![self.symbol isEqualToString:card2.symbol] && ![card1.symbol isEqualToString:card2.symbol])) {
-        result = result && true;
+        result = result && YES;
     } else {
-        return false;
+        return NO;
     }
     
     if (([self.color isEqualToString:card1.color] && [self.color isEqualToString:card2.color])
         || (![self.color isEqualToString:card1.color] && ![self.color isEqualToString:card2.color] && ![card1.color isEqualToString:card2.color])) {
-        result = result && true;
+        result = result && YES;
     } else {
-        return false;
+        return NO;
     }
     
     if ((self.number == card1.number && self.number == card2.number)
         || (self.number != card1.number && self.number != card2.number && card1.number != card2.number)) {
-        result = result && true;
+        result = result && YES;
     } else {
-        return false;
+        return NO;
     }
     
     if ((self.shading == card1.shading && self.shading == card2.shading)
         || (self.shading != card1.shading && self.shading != card2.shading && card1.shading != card2.shading)) {
-        result = result && true;
+        result = result && YES;
     } else {
-        return false;
+        return NO;
     }
     
     return result;
@@ -64,21 +64,21 @@
 - (BOOL)isMatch:(NSArray *)cards ForString:(NSString *)attr {
     SetCard *card1 = cards[0];
     SetCard *card2 = cards[1];
-    BOOL result = false;
+    BOOL result = NO;
     
     if ([attr isEqualToString:@"symbol"]) {
         if (([self.symbol isEqualToString:card1.symbol] && [self.symbol isEqualToString:card2.symbol])
             || (![self.symbol isEqualToString:card1.symbol] && ![self.symbol isEqualToString:card2.symbol] && ![card1.symbol isEqualToString:card2.symbol])) {
-                result = true;
+                result = YES;
         } else {
-            result = false;
+            result = NO;
         }
     } else if ([attr isEqualToString:@"color"]) {
         if (([self.color isEqualToString:card1.color] && [self.color isEqualToString:card2.color]) ||
             (![self.color isEqualToString:card1.color] && ![self.color isEqualToString:card2.color] && ![card1.color isEqualToString:card2.color])) {
-            result = result && true;
+            result = result && YES;
         } else {
-            result = false;
+            result = NO;
         }
     }
     
@@ -118,6 +118,10 @@
 
 + (NSArray *)validColors {
     return @[@"redColor", @"greenColor", @"blueColor"];
+}
+
++ (NSUInteger)maxNumber {
+    return [[SetCard validSymbols] count];
 }
 
 @end
