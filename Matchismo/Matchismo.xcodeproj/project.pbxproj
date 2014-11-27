@@ -20,6 +20,7 @@
 		4B0414D21A0AD13F00D75F0A /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0414D11A0AD13F00D75F0A /* PlayingCardDeck.m */; };
 		4B11F9BE1A0C62EF007E8DC7 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B11F9BD1A0C62EF007E8DC7 /* CardMatchingGame.m */; };
 		4BB81FBE1A1A852A009F3738 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB81FBD1A1A852A009F3738 /* PlayingCardGameViewController.m */; };
+		4BDF716A1A27527100FECC04 /* SetCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF71691A27527100FECC04 /* SetCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		4B11F9BD1A0C62EF007E8DC7 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Models/CardMatchingGame.m; sourceTree = "<group>"; };
 		4BB81FBC1A1A852A009F3738 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
 		4BB81FBD1A1A852A009F3738 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
+		4BDF71681A27527100FECC04 /* SetCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetCard.h; path = Models/SetCard.h; sourceTree = "<group>"; };
+		4BDF71691A27527100FECC04 /* SetCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCard.m; path = Models/SetCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				4B11F9BC1A0C62EF007E8DC7 /* CardMatchingGame.h */,
+				4BDF71681A27527100FECC04 /* SetCard.h */,
+				4BDF71691A27527100FECC04 /* SetCard.m */,
 				4B11F9BD1A0C62EF007E8DC7 /* CardMatchingGame.m */,
 				4B0414CD1A0ACBED00D75F0A /* Deck.h */,
 				4B0414CE1A0ACBED00D75F0A /* Deck.m */,
@@ -261,6 +266,7 @@
 				4B0414A61A0AC25D00D75F0A /* AppDelegate.m in Sources */,
 				4B0414A31A0AC25D00D75F0A /* main.m in Sources */,
 				4B0414CC1A0AC7BF00D75F0A /* PlayingCard.m in Sources */,
+				4BDF716A1A27527100FECC04 /* SetCard.m in Sources */,
 				4B11F9BE1A0C62EF007E8DC7 /* CardMatchingGame.m in Sources */,
 				4B0414D21A0AD13F00D75F0A /* PlayingCardDeck.m in Sources */,
 				4B0414CF1A0ACBED00D75F0A /* Deck.m in Sources */,
